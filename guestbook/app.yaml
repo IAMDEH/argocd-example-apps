@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/IAMDEH/argocd-example-apps.git
     targetRevision: HEAD
-    path: guestbook/
+    path: guestbook
     directory:
       recurse: true
   destination:
