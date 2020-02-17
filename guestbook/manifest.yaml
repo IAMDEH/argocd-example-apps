@@ -1,9 +1,11 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: default
+  name: guestbook-ui
 spec:
   syncPolicy:
+    applications:
+    - '*-prod'
     automated:
       prune: true
       selfHeal: true
