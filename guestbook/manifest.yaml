@@ -4,8 +4,8 @@ metadata:
   name: guestbook-ui
 spec:
   syncPolicy:
-    applications:
-    - '*-prod'
     automated:
       prune: true
       selfHeal: true
+  applications:
+    - '*'
