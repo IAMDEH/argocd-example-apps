@@ -9,12 +9,10 @@ spec:
     repoURL: https://github.com/IAMDEH/argocd-example-apps.git
     targetRevision: HEAD
     path: guestbook
-    directory:
-      recurse: true
   destination:
     server: https://kubernetes.default.svc
     namespace: default
   syncPolicy:
     automated:
-      prune: true
-      selfHeal: true
+      prune: false
+      selfHeal: false
